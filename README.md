@@ -1,5 +1,5 @@
 # AnthonyQuiles-Machine_Learning_Trading_Bot
-Module 14
+## Module 14
 # Machine Learning Trading Bot - Challenge
 
 In this Challenge, you’ll assume the role of a financial advisor at one of the top five financial advisory firms in the world. Your firm constantly competes with the other major firms to manage and automatically trade assets in a highly dynamic environment. In recent years, your firm has heavily profited by using computer algorithms that can buy and sell faster than human traders.
@@ -79,7 +79,7 @@ DataOffset = 3 months
 ```
 The overall accuracy score of this SVC model with the aforementioned parameters was 0.55. This is slightly better than a coin flip for probability, which led to the SVC model slightly outperforming the actual returns(actaul returns 1.386 vs SVC model returns 1.517)
 
-![Actual Returns vs SVC Model Returns](/Users/milluminatillc/Desktop/Module14/AnthonyQuiles-Machine_Learning_Trading_Bot/Resources/images/Actual_vs_SVC_returns.png)
+![Actual Returns vs SVC Model Returns](images/Actual_vs_SVC_returns.jpg)
 
 ---------
 
@@ -97,7 +97,8 @@ DataOffset = 24 months
 
 In the image below we can see the cumulative returns for the actual vs SVC model returns.
 
-![Updated training data set actual vs SVC model](/Users/milluminatillc/Desktop/Module14/AnthonyQuiles-Machine_Learning_Trading_Bot/Resources/images/Updated_data_actual _vs_SVC_model.png)
+![Updated training data set actual vs SVC model](images/Updated_data_actual _vs_SVC_model.jpg)
+
 
 By changing the training window, both the model accuracy score and the cumulative returns increased in performance. The accuracy score was 0.56, a slight improvement, which resulted in a cumulative return of 1.64. Overall the increase in the training window made a slight imporovement in accuracy and a marginally improved the returns by 8%.
 
@@ -113,11 +114,12 @@ DataOffset = 3 months
 
 The image below illustrates the performance of the the actual returns vs the SVC model returns.
 
-![New SMA parameters short 10, long 70](/Users/milluminatillc/Desktop/Module14/AnthonyQuiles-Machine_Learning_Trading_Bot/Resources/images/Actual_vs_SVC_returns_new_SMA.png)
+![New SMA parameters short 10, long 70](images/New_SMA_Actual_vs_SVC_returns.jpg)
+
 
 This image shows the performance of the SVC model vs the ADA boost model returns.
 
-![New SMA parameters SVC model vs ADA boost model returns](/Users/milluminatillc/Desktop/Module14/AnthonyQuiles-Machine_Learning_Trading_Bot/Resources/images/Actual_returns_vs_ADA_model_returns.png)
+![New SMA parameters SVC model vs ADA boost model returns](images/Actual_returns_vs_ADA_model_returns.jpg)
 
 In this instance i adjusted the values for the SMA's and ran both the SVC model and the ADA bnoost model against the actual returns. Something very interesting happened where both models pumped out perfect 100% recall scores for signal 1.0 and returned 0% scores for -1.0. This warns me to the possibility of overfitting somehow. Even with the disparity the SVC brought back the same exact returns that the Actual returns did (1.389), but the ADA boost model brought in a greater return(1.589). I find this to be a bit inconclusive due to the poor recall scores on both models.
 
@@ -131,7 +133,8 @@ long_window = 100
 DataOffset = 3 months
 ```
 
-![Original data Actual vs ADA boost model](/Users/milluminatillc/Desktop/Module14/AnthonyQuiles-Machine_Learning_Trading_Bot/Resources/images/Actual_vs_ADA_model_returns.png)
+![Original data Actual vs ADA boost model](images/Actual_vs_ADA_model_returns.jpg)
+
 
 The overall accuracy of the ADA boost model was in line with the SVC model at 55% but the ADA model made a slightly greater cumulative return(1.517 vs 1.581). All of the scores in the classification report were identical but it still outperformed the SVC model. 
 
@@ -141,7 +144,9 @@ The overall accuracy of the ADA boost model was in line with the SVC model at 55
 
 Overall it seems like the ADA boost model outperforms the Actual returns and SVC returns despite having similar if not identical accuracy, recall, f-1 and precision scores. The only instance the SVC model outperformed the ADA model was when I increased the traing and testing data. Most of the scores in the classifcation report were very similar but the standout metric was the precision for the SVC model, a whopping 80%. This is what made all the difference and allowed the SVC model to catch the ADA model and surpass it. The image below shows what happened in this instance.
 
-![SVC model vs ADA boost model 24 month DataOffset](/Users/milluminatillc/Desktop/Module14/AnthonyQuiles-Machine_Learning_Trading_Bot/Resources/images/SVC_vs_ADA_24month_DataOffset.png)
+![SVC model vs ADA boost model 24 month DataOffset](images/SVC_vs_ADA_24month_DataOffset.jpg)
+
+
 
 
 
