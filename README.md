@@ -121,7 +121,7 @@ This image shows the performance of the SVC model vs the ADA boost model returns
 
 ![New SMA parameters SVC model vs ADA boost model returns](images/Actual_returns_vs_ADA_model_returns.jpg)
 
-In this instance i adjusted the values for the SMA's and ran both the SVC model and the ADA bnoost model against the actual returns. Something very interesting happened where both models pumped out perfect 100% recall scores for signal 1.0 and returned 0% scores for -1.0. This warns me to the possibility of overfitting somehow. Even with the disparity the SVC brought back the same exact returns that the Actual returns did (1.389), but the ADA boost model brought in a greater return(1.589). I find this to be a bit inconclusive due to the poor recall scores on both models.
+In this instance I adjusted the values for the SMA's and ran both the SVC model and the ADA bnoost model against the actual returns. Something very interesting happened where both models pumped out perfect 100% recall scores for signal 1.0 and returned 0% scores for -1.0. This warns me to the possibility of overfitting somehow. Even with the disparity the SVC brought back the same exact returns that the Actual returns did (1.389), but the ADA boost model brought in a greater return(1.589). I find this to be a bit inconclusive due to the poor recall scores on both models.
 
 ### Analysis of Actual returns vs ADA boost returns.
 
